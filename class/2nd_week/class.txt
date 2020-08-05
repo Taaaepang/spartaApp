@@ -85,4 +85,7 @@
 
 11. <Text></Text> 태그 - JSX3.js
     => App에 글을 작성할 때 사용되는 엘리먼트.
-    
+
+12. <ScrollView> - JSX4_1.js, JSX4_2.js
+    => App 화면에 벗어나는 영역의 경우. <ScrollView> 엘리먼트로 감싸면 스크롤이 가능해짐.
+
