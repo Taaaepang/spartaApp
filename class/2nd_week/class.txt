@@ -3,6 +3,7 @@
 준비물 : VSCode, Android Studio, Xcode
 
 ! Mac은 Android Studio, Xcode 둘 다 설치가능. window는 Android만...
+! ReactNative 공식 사이트 https://reactnative.dev/
 
 1. Nodejs, npm, npx, yarn 설치(mac)
     $ brew install nodejs
@@ -68,4 +69,34 @@
         -> App의 이름, 출시 버전, 휴대폰에 설치될 때 보여질 아이콘, 켜질ㄷ 때 보여지는 슬플래시 스크린 화면, 안드로이드 또는 iOS 각각의 광고 설정 등.
     
 
-9.
+9. JSX 문법.(화면 만들기) - JSX1.js
+    9.1 모든 태그는 React Native에서 가져와서 사용하자.
+    9.2 태그는 닫는 태그가 붙어야 함.
+    9.3 모든 엘리먼트(태그 사이의 영역.)를 감싸는 최상의 태그가 필요.
+        return(
+            <View> {/* 촤상위 태그 */}
+                ....
+            </View>
+        )
+    9.4 return에 의해 렌더링 될 땐 항상 소괄호로 감싸져야 한다.
+    9.5 JSX 문법 밖에서의 주석(일반 JS 주석), 안에서 주석({일반 JS 주석}).
+
+10. <View></View> 태그 - JSX2.js
+    => 화면의 영역(레이아웃)을 잡아주는 엘리먼트.
+
+11. <Text></Text> 태그 - JSX3.js
+    => App에 글을 작성할 때 사용되는 엘리먼트.
+
+12. <ScrollView> - JSX4_1.js, JSX4_2.js
+    => App 화면에 벗어나는 영역의 경우. <ScrollView> 엘리먼트로 감싸면 스크롤이 가능해짐.
+
+13. <Button> - JSX5.js
+    =>  버튼을 만들어주고 onPress 속성을 통해 팝업창을 출력함.
+    # 함수를 화살표 함수, 일반 함수, JSX 외부에서 함수 선언해서 사용이 가능.
+    - JSX5_1.js, JSX5_2.js
+
+14. <TouchableOpacity> - JSX6.js
+    => 버튼 개념보다 영역을 선택해서 팝업이나 새로운 함수를 실행시키기 가능.
+
+15. Image Insert. - JSX7.js
+    => assets 폴더나 직접 이미지 파일 주소를 입력해서 출력할 수 있다.
