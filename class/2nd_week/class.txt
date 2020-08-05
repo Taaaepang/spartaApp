@@ -1,0 +1,71 @@
+2주차. Expo 설치 및 사용.
+
+준비물 : VSCode, Android Studio, Xcode
+
+! Mac은 Android Studio, Xcode 둘 다 설치가능. window는 Android만...
+
+1. Nodejs, npm, npx, yarn 설치(mac)
+    $ brew install nodejs
+    $ brew install yarn
+    -> npm, npx는 nodejs 설치 시 딸려옴.
+    -> 자주 쓸 라이브러리는 yarn, 무거운 라이브러리는 npx => 공식문서에 나와 있다고 한다.
+
+2. Expo 설치.
+    => ReactNative를 사용함에 있어 스타터키트를 만들어 준다. 시뮬레이터, 앱 배포 등을 쉽게 가능.
+    $ npm install -g expo-cli
+    ->  -g : 컴퓨터 전역.
+
+    % Expo를 설치하는 것은 프로젝트 생성, 빌드, 배포 등을 할 수있게 한다는 것.
+
+3. 개인 휴대폰에 expo 앱 설치 및 계정 생성.
+
+4. local과 Expo 서버 연결.
+    (cmd, terminal)
+    $ expo login --username "name"  (Taaaepang)
+    $ password input
+
+5. Expo 프로젝트 생성. ! workspace를 만들고 하자.
+    $ expo init project_name        (psytest-pang)
+
+    workflow -> blank               (도화지 상태에서 시작.)
+
+6. Expo 프로젝트 directory로 가서 Expo 실행.
+    $ expo start
+    -> expo 서버를 실행.
+
+7. Expo server의 개발자 도구.
+
+    7.1 Run on Android device simulator
+        -> 안드로이드 시뮬레이터에 연결.
+        -> Android Studio 실행 후, configure -> AVD manager
+        -> 시뮬레이터를 킨 후 도구 실행.
+        
+        $ expo start --android
+
+    7.2 Run on iOS simulator
+        -> Xcode에서 시뮬레이터 킨 후 실행
+    
+        $ expo start --ios
+    
+    7.3 Run in web browser
+        -> web 단에서 실행
+    
+    7.4 Send link with email
+        -> 배포 전 다른 사람의 폰에서 작동시키기 위해 링크 전송.
+        -> Expo app 설치 필수.
+    
+8. Expo project directory의 구조.
+
+    8.1 App.js
+        -> App 시작점. 화면을 구성
+        -> 웹으로 따지면 index.html or main.html
+        -> App이 시작될 때 필요한 준비들을 하는 장소, 준비를 할때 알려주는 화면을 띄어주는 곳.
+    8.2 assets 
+        -> App이 동작되고 서비스되는데에 기본적으로 가지고 있는 이미지 및 아이콘 파일들을 담는 폴더.
+    8.3 node_modules
+        -> ReactNative&Expo로 앱을 만들면서 설치하게 되는 라이브러리 저장 장소.
+    8.4 app.json
+        -> App의 이름, 출시 버전, 휴대폰에 설치될 때 보여질 아이콘, 켜질ㄷ 때 보여지는 슬플래시 스크린 화면, 안드로이드 또는 iOS 각각의 광고 설정 등.
+    
+
+9.
