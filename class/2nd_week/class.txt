@@ -97,4 +97,6 @@
 
 14. <TouchableOpacity> - JSX6.js
     => 버튼 개념보다 영역을 선택해서 팝업이나 새로운 함수를 실행시키기 가능.
-    
+
+15. Image Insert. - JSX7.js
+    => assets 폴더나 직접 이미지 파일 주소를 입력해서 출력할 수 있다.
