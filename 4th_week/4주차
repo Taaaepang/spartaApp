@@ -1,0 +1,11 @@
+firebase를 사용하여
+real-time database
+storge를 사용하여
+데이터 가져오기 및 쓰기
+
+날씨를 알려주는 툴을 사용하여 현재 위치의 날씨를 가져오기
+
+pdf참조
+
+expo install firebase
+expo install expo-constant
